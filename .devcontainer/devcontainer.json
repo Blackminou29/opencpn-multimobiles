@@ -1,0 +1,22 @@
+json{
+    "name": "OpenCPN Dev",
+    "image": "ubuntu:22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postCreateCommand": [
+        "apt", "update", "&&",
+        "apt", "install", "-y", 
+        "build-essential", "cmake", "git",
+        "libwxgtk3.0-gtk3-dev", "pkg-config"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools"
+            ]
+        }
+    }
+}
