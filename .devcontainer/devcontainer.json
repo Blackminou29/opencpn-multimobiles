@@ -1,4 +1,6 @@
-json{
+json
+
+{
     "name": "OpenCPN Dev",
     "image": "ubuntu:22.04",
     "features": {
